@@ -2,10 +2,15 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
+import ScrollToTop from '@/components/ScrollToTop'
+import ProgressBar from '@/components/ProgressBar'
+import { ThemeProvider } from '@/providers/ThemeProvider'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mlpsu.org'),
   title: 'ML@PSU',
   description: 'Machine Learning Club at Penn State University',
   openGraph: {
@@ -40,8 +45,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
-        <Analytics />
+        <ThemeProvider>
+          <ProgressBar />
+          {children}
+          <ScrollToTop />
+          <ThemeToggle />
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

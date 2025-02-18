@@ -1,0 +1,42 @@
+# General Guidelines
+- Maintain a single-page scrolling layout similar to https://www.socratica.info/
+- Ensure a smooth and seamless navigation experience between sections
+- Keep the design minimal, clean, and professional
+- Prioritize readability with appropriate font sizes, spacing, and contrast
+- Ensure full responsiveness for desktop, tablet, and mobile views
+
+# Code Structure
+- Use modern HTML, TailwindCSS, and Typescript
+- Organize sections in a clear, logical order: Header, Introduction, Current Highlights, About Us, Events, Participation, Our Team, Contact, Footer
+- Keep CSS styles modular and avoid inline styles
+- Use semantic HTML for better accessibility and SEO
+- Implement lazy loading for images to optimize performance
+
+# Navigation
+- Implement a fixed top navigation bar with smooth scrolling between sections
+- Use anchor links (e.g., `#about`, `#events`) for navigation
+- Highlight the active section in the navbar based on scroll position
+
+# Responsiveness
+- Ensure mobile-first design, using media queries for larger screens
+- Optimize touch interactions for mobile users
+- Avoid horizontal scrolling; all content should fit within the viewport
+
+# Performance
+- Optimize images and assets for faster loading (WebP format preferred)
+- Minimize and bundle CSS/JS files where possible
+- Use caching strategies to improve load times
+
+# Accessibility
+- Ensure proper use of ARIA attributes where needed
+- All text should have sufficient contrast against its background
+- Make sure the website is navigable via keyboard (Tab, Enter, etc.)
+
+# Footer
+- Include links to social media, legal information, and a subscription/newsletter option
+- Keep it minimal yet informative, avoiding unnecessary clutter
+
+# Additional Considerations
+- Maintain existing content while improving its presentation
+- Use smooth scroll animations where appropriate but avoid excessive animations
+- Ensure compatibility with all major browsers (Chrome, Firefox, Safari, Edge)
