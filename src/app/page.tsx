@@ -19,9 +19,9 @@ const staff = [
 ]
 
 const pastSpeakers = [
-  {name: 'Greg Fiengold', link: 'https://www.linkedin.com/in/greg-feingold-3a890a91/'},
-  { name: 'Sree Bhattacharya', link: 'https://www.linkedin.com/in/sree-bhattacharyya/' },
-  { name: 'Marmik Chaudhari', link: 'https://marmik.xyz' }
+  { name: 'Greg Feingold', link: '/speakers/greg-feingold' },
+  { name: 'Sree Bhattacharya', link: '/speakers/sree-bhattacharya' },
+  { name: 'Marmik Chaudhari', link: '/speakers/marmik-chaudhari' }
 ]
 
 const scrollingText = [
